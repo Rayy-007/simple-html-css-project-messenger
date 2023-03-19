@@ -1,0 +1,269 @@
+html, body {
+    margin:0;
+    padding:0;
+
+}
+
+nav {
+    height: 100vh;
+    background-color: #b1d4e0;
+    position:fixed;
+    z-index: 4;
+    padding: 30px;
+    top: 0;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 1.3rem;
+    padding: 0;
+}
+
+li{
+    padding: 15px 5px;
+}
+
+.mother{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.top{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    height: 100px;
+    position: sticky;
+    top: 0; 
+    border-bottom: 1px solid lightgray;
+    background-color: #FFFFFF;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.logoContainer{
+    width: 50px;
+    height: 50px;
+}
+
+.logo{
+    width: 100%;
+    
+}
+
+.head{
+    margin-bottom: 20px;
+    font-size: 33px;
+}
+.easy{
+    margin-bottom: 20px; 
+}
+.block{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #F5F5F5;
+    height: 35px;
+    border-radius: 15px;
+    outline: none;
+    width: 250px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+}
+.input{
+    margin-bottom: 20px ;
+}
+.password{
+    margin-bottom: 20px;
+}
+.signin{
+    background-color:blue;
+    border-radius: 23px;
+    border: none;
+    color: white;
+    padding:2px 20px 0px;
+    font-size: 19px;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left{
+    display: inline-block;
+    width: 50%;
+}
+.inner{
+    width: 70%;
+}
+.app{
+    width:120px;
+    cursor: pointer;
+    display: block;
+}
+.micro{
+    width:120px;
+   cursor: pointer;
+}
+
+
+.right{
+    display: inline-block;
+    width: 50%;
+}
+
+.photo { 
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 30px;
+    transform: rotate(5deg);
+    z-index: 0;
+}  
+.bottom{
+    text-align: center;
+    font-size: 50px;
+    margin-top:150px;
+    padding:50px;
+    background-color: lightgray;
+}
+
+/* Menu hide  and  show  with animation  */
+.menuContainer{
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+
+.menu{
+    text-decoration: none;
+    color: inherit;
+    margin-left: 20px;
+    font-size: 16px;
+    user-select: none;
+}
+.menu:hover{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+.mobileMenuContainer {
+    width : 50px;
+    height : 50px;
+    display: none;
+    /* transition: all .6s ease-in-out; */
+    cursor: pointer;
+}
+.mobileIcon{
+    width : 100%;
+    color : white;
+}
+.bar{
+    width: 30px;
+    height: 4px;
+    margin: 4px;
+    border-radius: 30px;
+    background: #b1d4e0;
+}
+
+.bar{
+    transition: all .6s ease-in-out;
+}
+
+.rotateBar1{
+    transform: rotate(45deg) translate(4px, 9px);
+}
+
+.rotateBar3 {
+    transform: rotate(-45deg) translate(3px, -8px);
+}
+
+.hideBar2 {
+    opacity: 0;
+}
+
+.showMenuBefore{
+    display: flex;
+    flex-direction: column;
+    /* display: none; */
+    position: fixed;
+    top: 100px;
+    right: 0px;
+    background-color: #b1d4e0;
+    height: 50vh;
+    padding: 30px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    z-index: 2;
+}
+
+.showMenu{
+    opacity: 1;
+    transform: translate(-50px, 50px);
+}
+
+@media (max-width: 767px) { 
+
+
+    .link {
+        margin-bottom: 20px;
+        font-size: 1.6rem;
+    }
+    .link:hover{
+        color: blue;
+        border-bottom: 0px;
+    }
+
+    .menuContainer {
+        opacity: 0;
+    }
+    
+    .mobileMenuContainer { 
+        display: block;
+    }
+
+
+    .top{
+        padding: 20px;
+    }
+
+    .left{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .inner{
+        width: 64%;
+        margin: 0 auto;
+    }
+    .right{
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        padding: 20px;
+    }
+    .photo {
+        margin: 0 -50%;
+    }
+}
+@media (max-width: 375px) {
+    .inner{
+        width: 95%;
+    }
+    .bottom{
+        margin-top: 30px;
+        font-size: 30px;
+        padding: 10px;
+    }
+}
+    
+    
+
+
